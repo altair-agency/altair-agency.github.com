@@ -1,12 +1,12 @@
 .u-section-title {
-    color: #fff;
+    color: @sub-color;
     .font(3);
     text-transform: uppercase;
     font-weight: 100;
     letter-spacing: 3px;
     text-align: center;
-    border-bottom: 1px solid @gray-light;
-    border-top: 1px solid @gray-light;
+    border-bottom: 1px solid @sub-color;
+    border-top: 1px solid @sub-color;
     line-height: 1;
     padding: 1rem 0;
 }
@@ -121,6 +121,7 @@
 .mask-block {
     font-size: 0;
     position: relative;
+    background-image: linear-gradient(transparent 100px, @main-color 10px);
     &__left,
     &__right {
         width: 50%;
@@ -149,15 +150,16 @@
     }
     &__content {
         background: #fff;
-        position: absolute;
+        position: relative;
+        top: -200px;
         z-index: @z-index1;
         display: block;
         width: 70%;
-        left: 15%;
-        top: 60%;
+        margin-left: 15%;
         .font(2);
         padding: 4rem;
         border-radius: 5px;
+        border: 1px solid @sub-color;
     }
     &__list {
         li {
@@ -174,8 +176,8 @@
         margin: 3rem auto 0;
         width: 60%;
         text-align: center;
-        background: #008a99;
-        color: #fff;
+        background: @sub-color2;
+        color: @sub-color;
         padding: 1.5rem 0;
         .font(1.6);
         text-transform: uppercase;
@@ -184,17 +186,16 @@
         border-radius: 5px;
         line-height: 1;
         span {
-            text-shadow: 2px 2px 4px rgba(0,0,0, 0.4);
+            text-shadow: 2px 2px 4px rgba(0,0,0, 0.1);
         }
 
     }
     &__common {
-//        background: #808080;
-        background-image: linear-gradient(to right bottom, #628ab3 0%, #b1b2b3 100%);
+        background: @main-color;
     }
 }
 .documents {
-    padding-top: 25%;
+    margin-top: -120px;
     width: 100%;
     &__title {
         &:extend(.u-section-title);
@@ -212,8 +213,8 @@
             a {
                 .font(1.8);
                 font-weight: 400;
-                color: #fff;
-                border-bottom: 1px solid @gray-light;
+                color: @sub-color;
+                border-bottom: 1px solid @gray;
                 opacity: 0.8;
                 position: relative;
                 &:before {
@@ -258,7 +259,7 @@
         line-height: 1.8;
         font-weight: 100;
         letter-spacing: 1px;
-        color: #fff;
+        color: @sub-color;
         b {
             font-weight: 400;
             border-bottom: 1px dashed @gray-light;
