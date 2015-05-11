@@ -13,11 +13,11 @@
         </div>
         <div class="unit-60 _centered">
             <a class="header__link js-header-link" href="#">Услуги</a>
-            <a class="header__link js-header-link" href="#">Документы</a>
+            <a class="header__link js-header-link" href="#">Отзывы</a>
             <a class="header__link js-header-link" href="#">О нас</a>
         </div>
         <div class="unit-20 unit_right">
-            <a class="header__phone" href="tel:89084456697">8-908-445-6697 <span>(Пастушков Роман)</span></a>
+            <a class="header__phone" href="tel:89084456697">8-908-445-6697 <span>(Роман Пастушков)</span></a>
 
         </div>
     </div>
@@ -88,37 +88,65 @@
         </div>
 
         <div class="mask-block__common js-block-2">
-            <section class="documents">
-                <h2 class="documents__title">Важные документы</h2>
-                <ul class="documents__list">
-                    <li><a target='_blank'
-                           href="http://www.un.org/ru/documents/decl_conv/conventions/pdf/maritime_labour.pdf">
-                        Конвенция
-                    </a></li>
-                    <li><a target='_blank'
-                           href="http://www.un.org/ru/documents/decl_conv/conventions/pdf/maritime_labour.pdf">
-                        Требования к резюме
-                    </a></li>
-                    <li><a target='_blank'
-                           href="http://www.un.org/ru/documents/decl_conv/conventions/pdf/maritime_labour.pdf">
-                        Анкета соискателя
-                    </a></li>
-                    <li><a target='_blank'
-                           href="http://www.un.org/ru/documents/decl_conv/conventions/pdf/maritime_labour.pdf">
-                        Акт № 10345
-                    </a></li>
-                </ul>
+            <!--<section class="documents">-->
+                <!--<h2 class="documents__title">Важные документы</h2>-->
+                <!--<ul class="documents__list">-->
+                    <!--<li><a target='_blank'-->
+                           <!--href="http://www.un.org/ru/documents/decl_conv/conventions/pdf/maritime_labour.pdf">-->
+                        <!--Конвенция-->
+                    <!--</a></li>-->
+                    <!--<li><a target='_blank'-->
+                           <!--href="http://www.un.org/ru/documents/decl_conv/conventions/pdf/maritime_labour.pdf">-->
+                        <!--Требования к резюме-->
+                    <!--</a></li>-->
+                    <!--<li><a target='_blank'-->
+                           <!--href="http://www.un.org/ru/documents/decl_conv/conventions/pdf/maritime_labour.pdf">-->
+                        <!--Анкета соискателя-->
+                    <!--</a></li>-->
+                    <!--<li><a target='_blank'-->
+                           <!--href="http://www.un.org/ru/documents/decl_conv/conventions/pdf/maritime_labour.pdf">-->
+                        <!--Акт № 10345-->
+                    <!--</a></li>-->
+                <!--</ul>-->
+            <!--</section>-->
+
+            <section class="reviews">
+                <h2 class="reviews__title">Отзывы о нас</h2>
+                <div class="units-row last">
+                    <div class="unit-33 reviews__item">
+                        Хочу поблагодарить Романа Пастушкова за его профессиональный подход к агентской деятельности в области крюинга. <br>
+                        Не понаслышке знаю, как порой сложно складываются отношения между плавсоставом и судовладельцами. <br>
+                        Любой моряк знает, как трудно найти крюинг и личного агента–кадровика, готового и способного выполнить
+                        качественный поиск и затем скурпулезную притирку человека к этой вакансии.
+
+                        <span>Александр (моряк 43 года)</span>
+                    </div>
+                    <div class="unit-33 reviews__item">
+                        Наша компания является достаточно известным в танкерном судоходстве оператором.
+                        Мы считаем Романа Александровича профессионалом своего дела, ответственным и грамотным кадровым морским агентом.
+                        С ним всегда легко и по деловому приятно решать все вопросы, связанные с формированием судовой роли любого судна и любой срочности.
+                        Желаем Роману Александровичу успехов и всегда рады нашему сотрудничеству.
+
+                        <span>Судовладелец</span>
+                    </div>
+                    <div class="unit-33 reviews__item">
+                        Уважаемый Роман Александрович! Спасибо за Вашу помощь в поиске для меня вакансии на флоте и за моральную поддержку в этот непростой для меня период спада морской отрасли. <br>
+                        Для меня особенно важно то, что Вы внимательно ознакомились с моей историей, что называется вниклив ситуацию, и нашли мне штатную должность ровно по моим силам, да и по ожиданиям. <br>
+                        Надеюсь на нашу дальнейшую взаимопомощь и взаимовыручку.
+
+                        <span>Дмитрий (моряк 31 год)</span>
+                    </div>
+
+                </div>
             </section>
 
 
+            <section class="map js-block-3">
+                <div id="map"></div>
+            </section>
 
             <section class="about">
                 <h2 class="about__title">О нас</h2>
-
-                <section class="map js-block-3">
-                    <div id="map"></div>
-                </section>
-
                 <div class="about__text-w">
                     <p class="about__text">
                         Мы агенство по подбору плавсостава и работаем на этом рынке не первый год.
@@ -153,6 +181,6 @@
 <script src="http://localhost:8080/webpack-dev-server.js"></script>
 <script type="text/javascript" src="http://localhost:8080/public/app.js"></script>
 <script src="public/app.js"></script>
-<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=sdnj-nDHMLhTg8izAFb1d5NO3sZWyLC0&width=100%&height=450&id=map"></script>
+<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=rAg-kYtlE3nQ2DEVFseTP7dcLiVrUlNP&width=100%&height=450&id=map"></script>
 </body>
 </html>
