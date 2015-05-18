@@ -26,11 +26,11 @@
     &__row {
         width: 100%;
         padding: 4rem 2rem;
-        transition: all 0.3s cubic-bezier(0.35, 0.09, 0.46, 1.65);
+        transition: all 0.2s cubic-bezier(0.35, 0.09, 0.46, 1.65);
     }
     &__logo {
         max-width: 240px;
-        transition: all 0.3s cubic-bezier(0.35, 0.09, 0.46, 1.65);
+        transition: all 0.2s cubic-bezier(0.35, 0.09, 0.46, 1.65);
     }
     &__link {
         .font(2.4);
@@ -51,7 +51,8 @@
             .font(1.2);
             font-weight: 100;
             position: relative;
-            top: -5px;
+            display: block;
+            margin-top: 0.5rem;
         }
     }
     &._small {
@@ -151,11 +152,11 @@
     &__content {
         background: #fff;
         position: relative;
-        top: -200px;
+        top: -160px;
         z-index: @z-index1;
         display: block;
-        width: 70%;
-        margin-left: 15%;
+        width: 75%;
+        margin-left: 12.5%;
         .font(2);
         padding: 4rem;
         border-radius: 5px;
@@ -190,6 +191,32 @@
         }
 
     }
+    &__link {
+        display: block;
+        text-align: center;
+        margin: 1rem auto 0;
+        text-decoration: none;
+        padding-right: 2.5rem;
+        span {
+            text-align: center;
+            .font(1.6);
+            font-style: italic;
+            color: @sub-color;
+            border-bottom: 1px solid @gray;
+            position: relative;
+            &:before {
+                content: '';
+                background: url('../../img/icon-doc.svg');
+                width: 16px;
+                height: 22px;
+                display: block;
+                position: absolute;
+                right: -2.5rem;
+                top: -3px;
+            }
+        }
+    }
+    
     &__common {
         background: @main-color;
     }
@@ -238,14 +265,18 @@
 .reviews {
     margin-top: -120px;
     width: 100%;
+
     &__title {
         &:extend(.u-section-title);
+    }
+    &__list {
+        padding: 0 3rem;
     }
     &__item {
         .font(1.4);
         line-height: 1.6;
         font-weight: 400;
-        padding: 0 3rem;
+        padding: 0 2rem;
         color: @sub-color;
         position: relative;
         font-style: italic;
@@ -256,6 +287,29 @@
             font-weight: bold;
             font-style: normal;
         }
+        &:before {
+            content: '«';
+            .font(8);
+            line-height: 1;
+            color: @sub-color;
+            position: absolute;
+            left: 0;
+            top: -2.7rem;
+            font-style: italic;
+            opacity: 0.2;
+        }
+        &:after {
+            content: '»';
+            .font(10);
+            line-height: 1;
+            color: @sub-color;
+            position: absolute;
+            right: 1rem;
+            bottom: 1rem;
+            font-style: italic;
+            opacity: 0.2;
+        }
+        
     }
 }
 .map {
@@ -299,7 +353,8 @@
     &:extend(.clearfix all);
     z-index: @z-index5;
     &__address,
-    &__mail {
+    &__mail,
+    &__skype {
         .font(1.8);
         font-weight: 100;
         color: #fff;
@@ -313,6 +368,10 @@
     }
     &__mail {
        float: right;
+    }
+    &__skype {
+        float: right;
+        margin-left: 4rem;
     }
     
 }

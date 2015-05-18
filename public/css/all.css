@@ -3692,6 +3692,7 @@ div.error {
 }
 .u-section-title,
 .documents__title,
+.reviews__title,
 .about__title {
   color: #45474d;
   font: 30px 'proxima_nova', sans-serif;
@@ -3720,11 +3721,11 @@ div.error {
 .header__row {
   width: 100%;
   padding: 4rem 2rem;
-  transition: all 0.3s cubic-bezier(0.35, 0.09, 0.46, 1.65);
+  transition: all 0.2s cubic-bezier(0.35, 0.09, 0.46, 1.65);
 }
 .header__logo {
   max-width: 240px;
-  transition: all 0.3s cubic-bezier(0.35, 0.09, 0.46, 1.65);
+  transition: all 0.2s cubic-bezier(0.35, 0.09, 0.46, 1.65);
 }
 .header__link {
   font: 24px 'proxima_nova', sans-serif;
@@ -3749,7 +3750,8 @@ div.error {
   font: 1.2rem 'proxima_nova', sans-serif;
   font-weight: 100;
   position: relative;
-  top: -5px;
+  display: block;
+  margin-top: 0.5rem;
 }
 .header._small .header__row {
   padding: 1rem 2rem;
@@ -3863,11 +3865,11 @@ div.error {
 .mask-block__content {
   background: #fff;
   position: relative;
-  top: -200px;
+  top: -160px;
   z-index: 10;
   display: block;
-  width: 70%;
-  margin-left: 15%;
+  width: 75%;
+  margin-left: 12.5%;
   font: 20px 'proxima_nova', sans-serif;
   font: 2rem 'proxima_nova', sans-serif;
   padding: 4rem;
@@ -3901,6 +3903,32 @@ div.error {
 }
 .mask-block__btn span {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.mask-block__link {
+  display: block;
+  text-align: center;
+  margin: 1rem auto 0;
+  text-decoration: none;
+  padding-right: 2.5rem;
+}
+.mask-block__link span {
+  text-align: center;
+  font: 16px 'proxima_nova', sans-serif;
+  font: 1.6rem 'proxima_nova', sans-serif;
+  font-style: italic;
+  color: #45474d;
+  border-bottom: 1px solid #e0e3e5;
+  position: relative;
+}
+.mask-block__link span:before {
+  content: '';
+  background: url('../../img/icon-doc.svg');
+  width: 16px;
+  height: 22px;
+  display: block;
+  position: absolute;
+  right: -2.5rem;
+  top: -3px;
 }
 .mask-block__common {
   background: #f4fafe;
@@ -3937,6 +3965,55 @@ div.error {
   position: absolute;
   left: -3rem;
   top: 0;
+}
+.reviews {
+  margin-top: -120px;
+  width: 100%;
+}
+.reviews__list {
+  padding: 0 3rem;
+}
+.reviews__item {
+  font: 14px 'proxima_nova', sans-serif;
+  font: 1.4rem 'proxima_nova', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  padding: 0 2rem;
+  color: #45474d;
+  position: relative;
+  font-style: italic;
+}
+.reviews__item span {
+  font: 16px 'proxima_nova', sans-serif;
+  font: 1.6rem 'proxima_nova', sans-serif;
+  display: block;
+  margin: 1rem 0;
+  font-weight: bold;
+  font-style: normal;
+}
+.reviews__item:before {
+  content: '«';
+  font: 80px 'proxima_nova', sans-serif;
+  font: 8rem 'proxima_nova', sans-serif;
+  line-height: 1;
+  color: #45474d;
+  position: absolute;
+  left: 0;
+  top: -2.7rem;
+  font-style: italic;
+  opacity: 0.2;
+}
+.reviews__item:after {
+  content: '»';
+  font: 100px 'proxima_nova', sans-serif;
+  font: 10rem 'proxima_nova', sans-serif;
+  line-height: 1;
+  color: #45474d;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  font-style: italic;
+  opacity: 0.2;
 }
 .map {
   margin-top: 6rem;
@@ -3977,7 +4054,8 @@ div.error {
   z-index: 50;
 }
 .footer__address,
-.footer__mail {
+.footer__mail,
+.footer__skype {
   font: 18px 'proxima_nova', sans-serif;
   font: 1.8rem 'proxima_nova', sans-serif;
   font-weight: 100;
@@ -3993,4 +4071,8 @@ div.error {
 }
 .footer__mail {
   float: right;
+}
+.footer__skype {
+  float: right;
+  margin-left: 4rem;
 }
