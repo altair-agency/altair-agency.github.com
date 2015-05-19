@@ -3725,7 +3725,7 @@ div.error {
 }
 .header__logo {
   max-width: 240px;
-  transition: all 0.2s cubic-bezier(0.35, 0.09, 0.46, 1.65);
+  transition: all 0.2s ease;
 }
 .header__link {
   font: 24px 'proxima_nova', sans-serif;
@@ -3794,6 +3794,12 @@ div.error {
   background-repeat: repeat-x;
   opacity: 1;
 }
+body.firefox .main-img__title {
+  -webkit-animation: none;
+  animation: none;
+  background-image: none;
+  color: rgba(255, 255, 255, 0.8);
+}
 @-webkit-keyframes wave-animation {
   0% {
     background-position: 0 bottom;
@@ -3843,8 +3849,8 @@ div.error {
 }
 .mask-block__img {
   width: 100%;
-  -webkit-filter: brightness(30%) grayscale(40%);
-  filter: brightness(30%) grayscale(40%);
+  -webkit-filter: brightness(40%) grayscale(10%);
+  filter: brightness(40%) grayscale(10%);
 }
 .mask-block__title {
   position: absolute;
@@ -3904,12 +3910,24 @@ div.error {
 .mask-block__btn span {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
+.mask-block__link-w {
+  text-align: center;
+}
+.mask-block__link-w i {
+  font: 26px 'proxima_nova', sans-serif;
+  font: 2.6rem 'proxima_nova', sans-serif;
+  position: relative;
+  bottom: -4px;
+  display: inline-block;
+  margin: 0 0.5rem;
+  color: #45474d;
+  opacity: 0.4;
+}
 .mask-block__link {
-  display: block;
+  display: inline-block;
   text-align: center;
   margin: 1rem auto 0;
   text-decoration: none;
-  padding-right: 2.5rem;
 }
 .mask-block__link span {
   text-align: center;
@@ -3920,14 +3938,17 @@ div.error {
   border-bottom: 1px solid #e0e3e5;
   position: relative;
 }
-.mask-block__link span:before {
+.mask-block__link:last-child {
+  padding-right: 3rem;
+}
+.mask-block__link:last-child span:before {
   content: '';
   background: url('../../img/icon-doc.svg');
   width: 16px;
   height: 22px;
   display: block;
   position: absolute;
-  right: -2.5rem;
+  right: -3rem;
   top: -3px;
 }
 .mask-block__common {

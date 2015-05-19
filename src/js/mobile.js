@@ -26,6 +26,15 @@ var mobile = {
                     $body.removeClass('fixfixed');
                 });
         }
+
+        if (navigator.userAgent.indexOf('Firefox') !== -1 &&
+            parseFloat(navigator.userAgent.substring(navigator.userAgent.indexOf('Firefox') + 8)) >= 3.6) {
+            $body.addClass('firefox');
+        }
+
+        if (Object.hasOwnProperty.call(window, 'ActiveXObject') && !window.ActiveXObject) {
+            $body.addClass('ie11');
+        }
     }
 };
 $(function () {
