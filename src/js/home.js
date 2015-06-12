@@ -27,6 +27,12 @@ var home = {
                 $('.header').removeClass('_small');
             }
         });
+
+        $(".fancybox").fancybox({
+            openEffect	: 'none',
+            closeEffect	: 'none',
+            padding : 40
+        });
     }
 };
 

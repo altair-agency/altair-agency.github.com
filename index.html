@@ -153,11 +153,32 @@
 
             <section class="map ">
                 <div id="map"></div>
+                <div class="js-ym-balloon1" style="display: none;">
+                    <div class="baloon">
+                        <h2 class="baloon__name">Altair</h2>
+                        <p class="baloon__text">Тел: +7(951)-507-0919(Роман Александрович)</p>
+                        <p class="baloon__text">Адрес: г. Таганрог, пер. Гоголевский, 6А, офис 11</p>
+                        <p class="baloon__text">Skype: marinecollege</p>
+                        <p class="baloon__text">Почта: altair2910@mail.ru</p>
+                    </div>
+                </div>
             </section>
 
             <section class="about js-block-3">
                 <h2 class="about__title">О нас</h2>
                 <div class="about__text-w">
+                    <ul class="about-gallery">
+                        <li>
+                            <a class="fancybox" rel="gallery1" href="img/img-office-1.jpg" title="Вход в офис (с Октябрьской)">
+                                <img src="img/img-office-1.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a class="fancybox" rel="gallery1" href="img/img-office-2.jpg" title="Вход в офис (с Октябрьской)">
+                                <img src="img/img-office-2.jpg" alt="" />
+                            </a>
+                        </li>
+                    </ul>
                     <p class="about__text">
                         Мы – агенство по подбору плавсостава и работаем на этом рынке не первый год.
                     </p>
@@ -192,6 +213,22 @@
 <script src="http://localhost:8080/webpack-dev-server.js"></script>
 <script type="text/javascript" src="http://localhost:8080/public/app.js"></script>
 <script src="public/app.js"></script>
-<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=rAg-kYtlE3nQ2DEVFseTP7dcLiVrUlNP&width=100%&height=450&id=map"></script>
+<!--<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=rAg-kYtlE3nQ2DEVFseTP7dcLiVrUlNP&width=100%&height=450&id=map"></script>-->
+<script defer async
+        src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard,package.geoObjects,package.geoQuery&lang=ru-RU&coordorder=longlat&onload=loadYandexMap"
+        type="text/javascript"></script>
+<script type="text/javascript">
+    function loadYandexMap() {
+        var head = document.getElementsByTagName('head').item(0),
+                script = document.createElement('script');
+
+        script.setAttribute('type', 'text/javascript');
+
+        script.setAttribute('src', 'src/js/map.js');
+        head.appendChild(script);
+
+        head.appendChild(script);
+    }
+</script>
 </body>
 </html>
