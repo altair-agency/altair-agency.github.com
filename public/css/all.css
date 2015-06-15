@@ -3690,6 +3690,24 @@ div.error {
     transform: none;
   }
 }
+#chatra.chatra--bc {
+  left: auto !important;
+  right: -10px !important;
+  top: 70% !important;
+  -webkit-transform: rotate(90deg) !important;
+  -ms-transform: rotate(90deg) !important;
+  transform: rotate(90deg) !important;
+  -webkit-transform-origin: 100% 0% !important;
+  -ms-transform-origin: 100% 0% !important;
+  transform-origin: 100% 0% !important;
+}
+#chatra.chatra--bc.chatra--expanded {
+  -webkit-transform: rotate(0) !important;
+  -ms-transform: rotate(0) !important;
+  transform: rotate(0) !important;
+  bottom: 0 !important;
+  top: auto !important;
+}
 .u-section-title,
 .documents__title,
 .reviews__title,
@@ -3770,6 +3788,32 @@ div.error {
   height: 50vw;
   text-align: center;
 }
+.main-img__bottom-link {
+  position: fixed;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-transform: lowercase;
+  font: 16px 'proxima_nova', sans-serif;
+  font: 1.6rem 'proxima_nova', sans-serif;
+  font-weight: 100;
+  color: #fff;
+  letter-spacing: 2px;
+  -webkit-animation: scroll 2s infinite ease-out alternate;
+  animation: scroll 2s infinite ease-out alternate;
+  cursor: pointer;
+}
+.main-img__bottom-link:before {
+  content: '';
+  background: url("../../img/icon-arrows.svg");
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  top: -34px;
+  left: 50%;
+  margin-left: -13px;
+}
 .main-img__title {
   position: absolute;
   bottom: 40px;
@@ -3799,6 +3843,26 @@ body.firefox .main-img__title {
   animation: none;
   background-image: none;
   color: rgba(255, 255, 255, 0.8);
+}
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
 }
 @-webkit-keyframes wave-animation {
   0% {
