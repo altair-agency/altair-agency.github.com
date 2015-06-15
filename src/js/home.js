@@ -33,6 +33,13 @@ var home = {
             closeEffect	: 'none',
             padding : 40
         });
+        $('.js-bottom-link').on('click', function (ev) {
+                ev.preventDefault();
+            $('html, body').animate({
+                scrollTop: $(".js-block-1").offset().top
+            }, 450);
+
+        });
     }
 };
 

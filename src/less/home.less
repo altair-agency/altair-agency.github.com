@@ -1,3 +1,15 @@
+#chatra.chatra--bc {
+    left: auto !important;
+    right: -10px !important;
+    top: 70% !important;
+    transform: rotate(90deg) !important;
+    transform-origin: 100% 0% !important;
+    &.chatra--expanded {
+        transform: rotate(0) !important;
+        bottom: 0 !important;
+        top: auto !important;
+    }
+}
 .u-section-title {
     color: @sub-color;
     .font(3);
@@ -75,6 +87,31 @@
     background-size: cover;
     height: 50vw;
     text-align: center;
+    &__bottom-link {
+        position: fixed;
+        bottom: 100px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        text-transform: lowercase;
+        .font(1.6);
+        font-weight: 100;
+        color: #fff;
+        letter-spacing: 2px;
+        animation: scroll 2s infinite ease-out alternate;
+        cursor: pointer;
+        &:before {
+            content: '';
+            background: url("../../img/icon-arrows.svg");
+            height: 26px;
+            width: 26px;
+            position: absolute;
+            top: -34px;
+            left: 50%;
+            margin-left: -13px;
+        }
+    }
+
     &__title {
         position: absolute;
         bottom: 40px;
@@ -104,6 +141,14 @@
     }
 }
 
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
 @keyframes wave-animation {
     0% {
         background-position: 0 bottom
