@@ -3711,6 +3711,7 @@ div.error {
 .u-section-title,
 .documents__title,
 .reviews__title,
+.contacts__title,
 .about__title {
   color: #45474d;
   font: 30px 'proxima_nova', sans-serif;
@@ -3739,11 +3740,14 @@ div.error {
 .header__row {
   width: 100%;
   padding: 4rem 2rem;
-  transition: all 0.2s cubic-bezier(0.35, 0.09, 0.46, 1.65);
+  transition: padding 0.2s ease;
 }
 .header__logo {
   max-width: 240px;
   transition: all 0.2s ease;
+}
+.header__logo:hover {
+  opacity: 0.7;
 }
 .header__link {
   font: 24px 'proxima_nova', sans-serif;
@@ -3754,6 +3758,11 @@ div.error {
   letter-spacing: 1px;
   margin: 2.5rem 0 0;
   width: 30%;
+  transition: all 0.2s ease;
+}
+.header__link:hover {
+  color: #7ae9f0;
+  opacity: 0.8;
 }
 .header__phone {
   font: 24px 'proxima_nova', sans-serif;
@@ -3770,6 +3779,12 @@ div.error {
   position: relative;
   display: block;
   margin-top: 0.5rem;
+}
+.header__phone:hover {
+  color: #7ae9f0;
+}
+.header__phone:hover span {
+  color: #fff;
 }
 .header._small .header__row {
   padding: 1rem 2rem;
@@ -4017,9 +4032,9 @@ body.firefox .main-img__title {
 }
 .mask-block__common {
   background: #f4fafe;
+  margin-top: -120px;
 }
 .documents {
-  margin-top: -120px;
   width: 100%;
 }
 .documents__list {
@@ -4052,7 +4067,6 @@ body.firefox .main-img__title {
   top: 0;
 }
 .reviews {
-  margin-top: -120px;
   width: 100%;
 }
 .reviews__list {
@@ -4100,6 +4114,58 @@ body.firefox .main-img__title {
   font-style: italic;
   opacity: 0.2;
 }
+.contacts {
+  width: 100%;
+}
+.contacts__sub-title {
+  font: 20px 'proxima_nova', sans-serif;
+  font: 2rem 'proxima_nova', sans-serif;
+  font-weight: 400;
+  color: #45474d;
+  font-style: italic;
+  padding-top: 1rem;
+  position: relative;
+  padding-left: 5rem;
+}
+.contacts__sub-title img {
+  max-width: 3rem;
+  position: absolute;
+  left: 0;
+}
+.contacts__sub-title._first img {
+  top: 2px;
+}
+.contacts__sub-title._second img {
+  top: 4px;
+}
+.contacts__sub-title._third img {
+  top: 4px;
+}
+.contacts__list {
+  margin: 0;
+  padding: 0;
+}
+.contacts__row {
+  max-width: 85%;
+  margin: 0 auto;
+  padding-left: 4rem;
+}
+.contacts__cell {
+  padding: 0 2rem;
+}
+.contacts__item {
+  margin: 1rem 0;
+  font: 16px 'proxima_nova', sans-serif;
+  font: 1.6rem 'proxima_nova', sans-serif;
+  line-height: 1.6;
+  color: #45474d;
+  opacity: 0.9;
+}
+.contacts__item span {
+  font: 14px 'proxima_nova', sans-serif;
+  font: 1.4rem 'proxima_nova', sans-serif;
+  opacity: 0.7;
+}
 .map {
   margin-top: 6rem;
   width: 100%;
@@ -4114,7 +4180,8 @@ body.firefox .main-img__title {
 }
 .baloon {
   width: 420px;
-  padding: 2rem;
+  padding: 2rem 2rem 10rem 2rem;
+  position: relative;
 }
 .baloon__name {
   font: 16px 'proxima_nova', sans-serif;
@@ -4125,8 +4192,14 @@ body.firefox .main-img__title {
 .baloon__text {
   font: 16px 'proxima_nova', sans-serif;
   font: 1.6rem 'proxima_nova', sans-serif;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   line-height: 1.5;
+}
+.baloon__img {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  max-width: 150px;
 }
 .about-gallery {
   width: 60%;

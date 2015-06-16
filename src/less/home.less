@@ -10,6 +10,7 @@
         top: auto !important;
     }
 }
+
 .u-section-title {
     color: @sub-color;
     .font(3);
@@ -22,6 +23,7 @@
     line-height: 1;
     padding: 1rem 0;
 }
+
 .main-container {
     padding-bottom: 4rem;
 }
@@ -38,11 +40,14 @@
     &__row {
         width: 100%;
         padding: 4rem 2rem;
-        transition: all 0.2s cubic-bezier(0.35, 0.09, 0.46, 1.65);
+        transition: padding 0.2s ease;
     }
     &__logo {
         max-width: 240px;
         transition: all 0.2s ease;
+        &:hover {
+            opacity: 0.7;;
+        }
     }
     &__link {
         .font(2.4);
@@ -52,6 +57,11 @@
         letter-spacing: 1px;
         margin: 2.5rem 0 0;
         width: 30%;
+        transition: all 0.2s ease;
+        &:hover {
+            color: @sub-color2;
+            opacity: 0.8;
+        }
     }
     &__phone {
         .font(2.4);
@@ -65,6 +75,12 @@
             position: relative;
             display: block;
             margin-top: 0.5rem;
+        }
+        &:hover {
+            color: @sub-color2;
+            span {
+                color: #fff;
+            }
         }
     }
     &._small {
@@ -149,6 +165,7 @@
         transform: translateY(-20px);
     }
 }
+
 @keyframes wave-animation {
     0% {
         background-position: 0 bottom
@@ -166,9 +183,11 @@
         background-size: 200px 100px
     }
 }
+
 .pseudo-block {
     margin-top: calc(50vw - 5%);
 }
+
 .mask-block {
     font-size: 0;
     position: relative;
@@ -237,7 +256,7 @@
         border-radius: 5px;
         line-height: 1;
         span {
-            text-shadow: 2px 2px 4px rgba(0,0,0, 0.1);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
         }
 
     }
@@ -281,13 +300,15 @@
             }
         }
     }
-    
+
     &__common {
         background: @main-color;
+        margin-top: -120px;
     }
 }
+
 .documents {
-    margin-top: -120px;
+
     width: 100%;
     &__title {
         &:extend(.u-section-title);
@@ -327,8 +348,8 @@
         }
     }
 }
+
 .reviews {
-    margin-top: -120px;
     width: 100%;
 
     &__title {
@@ -374,9 +395,64 @@
             font-style: italic;
             opacity: 0.2;
         }
-        
+
     }
 }
+
+.contacts {
+    width: 100%;
+    &__title {
+        &:extend(.u-section-title);
+    }
+    &__sub-title {
+        .font(2);
+        font-weight: 400;
+        color: @sub-color;
+        font-style: italic;
+        padding-top: 1rem;
+        position: relative;
+        padding-left: 5rem;
+
+        img {
+            max-width: 3rem;
+            position: absolute;
+            left: 0;
+        }
+        &._first img {
+            top: 2px;
+        }
+        &._second img {
+            top: 4px;
+        }
+        &._third img {
+            top: 4px;
+        }
+    }
+    &__list {
+        margin: 0;
+        padding: 0;
+    }
+    &__row {
+        max-width: 85%;
+        margin: 0 auto;
+        padding-left: 4rem;
+    }
+    &__cell {
+        padding: 0 2rem;
+    }
+    &__item {
+        margin: 1rem 0;
+        .font(1.6);
+        line-height: 1.6;
+        color: @sub-color;
+        opacity: 0.9;
+        span {
+            .font(1.4);
+            opacity: 0.7;
+        }
+    }
+}
+
 .map {
     margin-top: 6rem;
     width: 100%;
@@ -389,9 +465,11 @@
         height: 400px;
     }
 }
+
 .baloon {
     width: 420px;
-    padding: 2rem;
+    padding: 2rem 2rem 10rem 2rem;
+    position: relative;
     &__name {
         .font(1.6);
         font-weight: bold;
@@ -399,10 +477,17 @@
     }
     &__text {
         .font(1.6);
-        margin: 0.5rem 0;
+        margin: 1rem 0;
         line-height: 1.5;
     }
+    &__img {
+        position: absolute;
+        right: 1rem;
+        bottom: 1rem;
+        max-width: 150px;
+    }
 }
+
 .about-gallery {
     width: 60%;
     display: block;
@@ -414,6 +499,7 @@
         margin-right: 5%;
     }
 }
+
 .about {
     margin-top: 6rem;
     padding-bottom: 4rem;
@@ -439,6 +525,7 @@
         }
     }
 }
+
 .footer {
     position: fixed;
     bottom: 0;
@@ -463,11 +550,11 @@
         }
     }
     &__mail {
-       float: right;
+        float: right;
     }
     &__skype {
         float: right;
         margin-left: 4rem;
     }
-    
+
 }
