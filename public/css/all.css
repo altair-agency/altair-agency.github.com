@@ -4164,7 +4164,7 @@ body.firefox .main-img__title {
 .contacts__item span {
   font: 14px 'proxima_nova', sans-serif;
   font: 1.4rem 'proxima_nova', sans-serif;
-  opacity: 0.7;
+  opacity: 0.85;
   padding-top: 0.5rem;
 }
 .contacts__item b {
@@ -4175,8 +4175,11 @@ body.firefox .main-img__title {
   position: relative;
   bottom: -3px;
   display: inline-block;
-  margin: 0 0.2rem;
+  margin: 0 0.7rem;
   line-height: 14px;
+}
+.contacts__item b._fixed {
+  margin-left: 0.3rem;
 }
 .contacts__item._title {
   margin-top: 1rem;
