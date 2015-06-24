@@ -441,7 +441,7 @@
         padding: 0 2rem;
     }
     &__item {
-        margin: 1rem 0;
+        margin: 0.2rem 0;
         .font(1.6);
         line-height: 1.6;
         color: @sub-color;
@@ -449,6 +449,26 @@
         span {
             .font(1.4);
             opacity: 0.7;
+            padding-top: 0.5rem;
+        }
+        b {
+            color: #000;
+            font-weight: bold;
+            .font(2.5);
+            position: relative;
+            bottom: -3px;
+            display: inline-block;
+            margin: 0 0.2rem;
+            line-height: 14px;
+        }
+        &._title {
+            margin-top: 1rem;
+        }
+        &._with-border {
+            span {
+                border-top: 1px solid #9fa4a6;
+            }
+
         }
     }
 }

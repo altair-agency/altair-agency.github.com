@@ -4154,7 +4154,7 @@ body.firefox .main-img__title {
   padding: 0 2rem;
 }
 .contacts__item {
-  margin: 1rem 0;
+  margin: 0.2rem 0;
   font: 16px 'proxima_nova', sans-serif;
   font: 1.6rem 'proxima_nova', sans-serif;
   line-height: 1.6;
@@ -4165,6 +4165,24 @@ body.firefox .main-img__title {
   font: 14px 'proxima_nova', sans-serif;
   font: 1.4rem 'proxima_nova', sans-serif;
   opacity: 0.7;
+  padding-top: 0.5rem;
+}
+.contacts__item b {
+  color: #000;
+  font-weight: bold;
+  font: 25px 'proxima_nova', sans-serif;
+  font: 2.5rem 'proxima_nova', sans-serif;
+  position: relative;
+  bottom: -3px;
+  display: inline-block;
+  margin: 0 0.2rem;
+  line-height: 14px;
+}
+.contacts__item._title {
+  margin-top: 1rem;
+}
+.contacts__item._with-border span {
+  border-top: 1px solid #9fa4a6;
 }
 .map {
   margin-top: 6rem;

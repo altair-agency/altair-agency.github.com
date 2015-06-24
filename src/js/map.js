@@ -38,7 +38,7 @@ jQuery(function ($) {
                         .add('zoomControl', {left: 5, top: 5})
                         .add('mapTools', { left: 35, top: 5 });
 
-                    var placemark = new ymaps.Placemark([38.91855376,47.21704118], {
+                    var placemark = new ymaps.Placemark([38.91830976,47.21706118], {
                         name: 'Altair crew agency',
                         balloonContent: $('.js-ym-balloon1').html()
                     });
